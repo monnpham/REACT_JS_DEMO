@@ -15,7 +15,6 @@ export default class RenderWithMap extends Component {
                 </div>
             })
         )
-
     }
     render() {
         return (

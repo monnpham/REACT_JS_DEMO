@@ -4,7 +4,8 @@ import { faker } from '@faker-js/faker'
 
 export default class DemoProps extends Component {
     state = {
-        user: "Mon"
+        user: "Mon",
+        title: "AAAAAAAA"
     }
     //state ở đâu thì viết setState ở đó
     handleChangeName = () => {      //airline.flightNumber()                

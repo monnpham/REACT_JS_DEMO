@@ -21,8 +21,8 @@ function App() {
       {/* <RenderWithMap></RenderWithMap> */}
       {/* --- Day 2--- */}
       {/* <DemoState /> */}
-      {/* <Ex_Car></Ex_Car> */}
-      <DemoProps></DemoProps>
+      <Ex_Car></Ex_Car>
+      {/* <DemoProps></DemoProps> */}
       {/* props reactjs */}
     </div>
 
