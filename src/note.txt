@@ -1,10 +1,48 @@
+--- More 
+    - cài sass "npm install --save-dev node-sass"
+    - cấu trúc của folder :
+        src
+        |__ component (shared compoents between features)           //folder component chứa các component sử dụng chung loading là 1 folder con có thể có thêm folder con vd: header footer..
+        |  |__ Loading                                              //
+        |     |__ index.jsx
+        |     |__ styles.sass
+        |
+        |__ features 
+        |  |__ Todo
+        |     |__ folder component (component of feature Todo)
+        |     |__ pages (pages of feature Todo)
+        |     |__ index.jsx (entry point of feature Todo)
+        |
+        |__ App.js
+
+
+
+    - classnames : để thêm classname khi obj có dữ liệu trùng với tên classname cài : "npm i --save classnames"  
+        import classname from 'classname'
+        Ví dụ :
+        <ul>
+        {todoList.map(todo=> (                                  // duyệt qua từng phần tử trong mảng todo
+            <li                                                 
+                key={todo.id}                                   // kiểm tra key là id
+                className={classnames(
+                    'todo-item':true,                           // thêm 1 class luôn luôn có => true
+                    completeds : todo.status === 'complete'      //** khi obj todo.status mà bằng completed thì sẽ thêm vào class completeds
+                )}
+            >
+            </li>
+        ))}
+        </ul>
+    - trước khi update obj hoặc arr thì clone ra 1 mảng mới cú pháp : const newlist =[..."tên mảng đầu tiên"]
+
 --- Day 1
-    -lệnh tạo react "npx create-react-app ."
-    -coppy html trong html.txt
-    -cài node-sass "npm install --save-dev node-sass"
-+ Cách tạo component :2  cách (rfc, rcc)
-+ Data Binding : đưa data lên layout
-+ RenderWithMap :convert array chứa data trở thành array chứa các 
-component html, sau đó đưa lên layout
+    - lệnh tạo react "npx create-react-app ."
+    - coppy html trong html.txt
+
++ Cách tạo component    : 3 cách (rfc, rcc, rsfp)
++ Data Binding          : đưa data lên layout
++ RenderWithMap         :convert array chứa data trở thành array chứa các component html, sau đó đưa lên layout
+
 --- Day 2
-+ State : quản lý data ảnh hưởng đến việc render lại layout, layout sẽ được re-render khi data dược update
++ State : quản lý data ảnh hưởng đến việc render lại layout, layout sẽ được re-render khi data dược update "data được update theo thời gian"
++ Props : lấy dữ liệu từ component khác, component con sử dụng và "không update được"
+++ có thể sử dụng props để lấy dữ liệu từ cha cộng với state để update data tại component con
