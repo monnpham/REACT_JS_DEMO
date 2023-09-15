@@ -1,6 +1,7 @@
 --- Day 1
-lệnh tạo react "npx create-react-app ."
-> coppy html trong html.txt
+    -lệnh tạo react "npx create-react-app ."
+    -coppy html trong html.txt
+    -cài node-sass "npm install --save-dev node-sass"
 + Cách tạo component :2  cách (rfc, rcc)
 + Data Binding : đưa data lên layout
 + RenderWithMap :convert array chứa data trở thành array chứa các 

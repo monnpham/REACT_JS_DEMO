@@ -8,6 +8,7 @@ import RenderWithMap from './RenderWithMap/RenderWithMap';
 import DemoState from './DemoState/DemoState';
 import Ex_Car from './Ex_Car/Ex_Car';
 import DemoProps from './DemoProps/DemoProps';
+import Ex_Phone from './Ex_Phone/Ex_Phone';
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
       {/* <RenderWithMap></RenderWithMap> */}
       {/* --- Day 2--- */}
       {/* <DemoState /> */}
-      <Ex_Car></Ex_Car>
+      {/* <Ex_Car></Ex_Car> */}
       {/* <DemoProps></DemoProps> */}
       {/* props reactjs */}
+      <Ex_Phone />
     </div>
 
   );
