@@ -9,6 +9,7 @@ import DemoState from './DemoState/DemoState';
 import Ex_Car from './Ex_Car/Ex_Car';
 import DemoProps from './DemoProps/DemoProps';
 import Ex_Phone from './Ex_Phone/Ex_Phone';
+import Ex_Shoe from './Ex_Shoe/pages/Ex_Shoe';
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <Ex_Car></Ex_Car> */}
       {/* <DemoProps></DemoProps> */}
       {/* props reactjs */}
-      <Ex_Phone />
+      {/* <Ex_Phone /> */}
+      <Ex_Shoe />
     </div>
 
   );

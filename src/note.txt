@@ -1,4 +1,5 @@
 --- More 
+    - cài thông báo "npm i antd"
     - cài sass "npm install --save-dev node-sass"
     - cấu trúc của folder :
         src
@@ -14,9 +15,6 @@
         |     |__ index.jsx (entry point of feature Todo)
         |
         |__ App.js
-
-
-
     - classnames : để thêm classname khi obj có dữ liệu trùng với tên classname cài : "npm i --save classnames"  
         import classname from 'classname'
         Ví dụ :
@@ -26,13 +24,27 @@
                 key={todo.id}                                   // kiểm tra key là id
                 className={classnames(
                     'todo-item':true,                           // thêm 1 class luôn luôn có => true
-                    completeds : todo.status === 'complete'      //** khi obj todo.status mà bằng completed thì sẽ thêm vào class completeds
+                    completeds : todo.status === 'complete'     //** khi obj todo.status mà bằng completed thì sẽ thêm vào class completeds
                 )}
             >
             </li>
         ))}
         </ul>
     - trước khi update obj hoặc arr thì clone ra 1 mảng mới cú pháp : const newlist =[..."tên mảng đầu tiên"]
+    - Hàm cắt String lấy cố định số lượng kí tự ví dụ :
+        convertString =(name) =>{
+            let maxLength = 12                                  // tạo biến maxLength số lượng mình muốn cắt
+            if(name.length > maxLength){
+                return name.slice(0, maxLength) + "..."
+            }else{
+                return name
+            }
+        }
+        > this.convertString(name)                              //cách gọi    
+
+
+
+
 
 --- Day 1
     - lệnh tạo react "npx create-react-app ."

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 export default class ItemPhone extends Component {
     render() {
-        console.log("Aitem props", this.props.item);
         //
         let { hinhAnh, tenSP } = this.props.item;
         return (
