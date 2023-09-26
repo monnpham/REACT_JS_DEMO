@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default class DetaillShoe extends Component {
 
     render() {
-        let { image, id } = this.props.detail
+        let { image } = this.props.detail
         return (
             <div>
 

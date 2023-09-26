@@ -1,0 +1,8 @@
+store : chứa state => state thay đổi => re-render layout
+
+reducer : nơi viết logic, dùng để thay đổi data của state trong store 
+
+ mapStateToProps: lấy dữ liệu từ store và đưa cho component dưới dạng props ~ lấy data từ redux về 
+ 
+
+ mapDisathchToProps: đẩy dữ liệu từ component lên reducer bằng dispathch action, action chứa type và payload ~ đẩy data lên redux

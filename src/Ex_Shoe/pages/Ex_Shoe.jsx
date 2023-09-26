@@ -77,7 +77,11 @@ export default class Ex_Shoe extends Component {
                         />
                     </div>
                     <div className='col-6'>
-                        <ListShoe handelDetail={this.handelDetail} handelBuy={this.handelAdd} list={this.state.dataShoe} />
+                        <ListShoe
+                            handelDetail={this.handelDetail}
+                            handelBuy={this.handelAdd}
+                            list={this.state.dataShoe}
+                        />
                     </div>
                 </div>
                 <DetaillShoe detail={this.state.detail} />

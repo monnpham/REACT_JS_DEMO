@@ -39,7 +39,7 @@ export default class DemoState extends Component {
                 <button onClick={this.Decrease} className='btn btn-danger'>-</button>
                 <span className='display-4 mx-5'> {this.state.number}</span>
                 <button onClick={this.Increase} className='btn btn-warning'>+</button>
-                <h2 className={`display-1 ${this.state.user == "Mon" ? "text-secondary" : "text-primary"}`}> {this.state.user}</h2>
+                <h2 className={`display-1 ${this.state.user === "Mon" ? "text-secondary" : "text-primary"}`}> {this.state.user}</h2>
                 {/* // cách 1 */}
                 {/* <button onClick={this.ChangenBob} className='btn btn-primary'>change to Bob</button>
                 <button onClick={this.ChangenMon} className='btn btn-secondary'>change to Mon</button> */}

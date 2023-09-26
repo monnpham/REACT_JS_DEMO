@@ -6,7 +6,7 @@ export default class ItemPhone extends Component {
         let { hinhAnh, tenSP } = this.props.item;
         return (
             <div className="card text-left col-4">
-                <img className="card-img-top" src={hinhAnh} alt />
+                <img className="card-img-top" src={hinhAnh} alt="" />
                 <div className="card-body">
                     <h4 className="card-title">{tenSP}</h4>
                     <p className="card-text">
